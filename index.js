@@ -6,7 +6,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 // Replace "your_database" with the name of your MongoDB database
-const uri = 'mongodb://localhost:27017/location'
+const uri = process.env.MONGODB_URI
 
 app.use(bodyParser.json())
 
